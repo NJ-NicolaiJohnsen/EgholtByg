@@ -1,0 +1,12 @@
+@import "./_style";
+@import './_resets';
+
+
+.main {
+
+    #{&}__article {
+        display: flex;
+
+    }
+    
+}
