@@ -2,11 +2,14 @@
 @import './_resets';
 
 
-.main {
 
-    #{&}__article {
-        display: flex;
 
-    }
-    
+.main__article {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main__article__content {
+    display: flex;
 }
