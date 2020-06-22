@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+a {
+   text-decoration: none;
+   color: inherit
+}
+
+a, p, span, h1, h2, h3, ul, li {
+   position: relative;
+   z-index: 100;
+}
+
+@media (max-width: 660px){
+
+
+    body {
+        font-size: 16px;
+     }
+
+   h1 {
+      font-size: 26px;
+   }
+
+   h2{
+
+   }
+
+   h3 {
+      
+   }
+
+   
+   }
+
+ @media (min-width: 661px) and (max-width: 1024px) {
+   
+   h1 {
+      font-size: 38px;
+   }
+
+   h2{
+
+   }
+
+   h3 {
+      
+   }
+ }
+
+ @media (min-width: 1025px) {
+   body {
+
+      font-size: 18px;
+      
+   }
+   
+   h1 {
+      font-size: 50px;
+   }
+
+   h2{
+
+   }
+
+   h3 {
+      
+   }
+ }

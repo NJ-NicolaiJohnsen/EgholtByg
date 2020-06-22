@@ -1,0 +1,144 @@
+@import './_resets';
+@import './variables';
+
+/*
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+@mixin theme($light-theme: true){
+    @if $light-theme{
+        background: lighten($primary-color, 100%);
+        color: darken($text-color, 100%);
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+$mobile: 800px;
+
+*/
+
+@mixin flexCenter ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin psuedo ($bgSettings) {
+    background: $bgSettings;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    background: red;
+    display: flex;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+
+    &-content {
+       
+        z-index: 100;
+        position: relative;
+       
+        .main-title {
+            color: white;
+            position: relative;
+            @include flexCenter(column);
+            padding: 100px 0;
+            
+            &::before {
+
+                @include psuedo(url(../images/facade.jpg) center);
+                filter: saturate(100%) blur(1px);
+                z-index: 0;
+            
+            }
+
+            &::after {
+                @include psuedo(linear-gradient(#0106, #0109));
+                z-index: 0;
+                
+                mix-blend-mode: multiply;
+            }
+
+            .title {
+                z-index: 100;
+                position: relative;
+                font-weight: 800;
+                font-style: italic;
+                margin-bottom: 30px;
+            }
+        
+            .title-subtext {
+                z-index: 100;
+                position: relative;
+                text-align: center;
+                width: 66%;
+            }
+
+        }
+
+
+
+        .main-text {
+            padding: 50px 20px 100px;
+            position: relative;
+            color: white;
+            filter: saturate(100%);
+            background: linear-gradient(#0106, #0109);
+
+           &::before {
+               @include psuedo(url(../images/cover.jpg) center);
+               filter: blur(1px);
+               z-index: 0;
+               mix-blend-mode: multiply;
+           }
+
+           & h2 {
+               
+           }
+            
+        }
+
+    }
+
+    
+    
+}
+
+
+
+
+/*
+.main-title::after {
+    
+    @include psuedo(linear-gradient(#0106, #0109));
+    z-index: 0;
+    filter: saturate(50%);
+    mix-blend-mode: multiply;
+}
+*/
