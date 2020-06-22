@@ -53,15 +53,6 @@ header {
 
 
 
-
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid white;
-  margin: 0;
-}
-
 .main__article {
   display: flex;
   flex-direction: column;
@@ -69,8 +60,44 @@ header {
 }
 
 .main__article__title {
-  padding: 100px;
+  padding: 140px 20px;
   border: 1px solid black;
- 
+  background: burlywood;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
+.main__article__title p {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.main__article__title h1 {
+  font-size: 50px;
+  
+}
+
+.main__article__content {
+  padding: 20px;
+  background: #8abf67
+}
+
+.main__article__content h2 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.main__article__content p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+ 
+}
+
+.main__article__content ul {
+  list-style-position: inside;
+  margin-top: 10px;
 }
