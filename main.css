@@ -1,82 +1,27 @@
+/* Styling for large elements that will be reused in many sub sites. */
 
-#nav {
+nav {
   height: 100px;
+  width: 100%;
+  background: #ACD1B6;
+}
+
+.nav-wrap {
+  max-width: 1220px;
+  height: 100%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(270deg, #633200, #3e1c00);
-  padding: 0 2rem;
- 
 }
 
-.nav-bar {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 40vh;
-  position: fixed;
-  z-index: 1000000;
-  flex-direction: column;
-  background-color: white;
-  padding: 1em;
+.nav-buttons {
   display: flex;
-  translate: -100%;
-  will-change: translate;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
 }
 
-.nav-bar a {
-
-  font-weight: 300;
-  padding: 5px 0;
-  margin: 5px 0;
-  width: max-content;
-}
-
-.hide-menu {
-  color: white;
-  font-size: 2.5rem;
-  position: absolute;
-  right: 2rem;
-  display: none;
-  cursor: pointer;
-  color: orange;
-}
-
-.hide-menu i {
-  
-}
-.logo {
-  font-weight: 700;
-  font-size: 2.5rem;
-  display: block;
-  color: orange;
-}
-
-.logo:hover {
-  color: #dd8900;
-}
-
-.logo span {
-  transform-origin: middle top;
-  translate: -16px -7px;
-  rotate: 90deg;
-  font-weight: 700;
-  display: inline-block;
-  font-size: 0.38em;
-} 
-
-#menu-icon {
-  width: 44px;
-  height: 34px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-#menu-icon div {
-  display: inline-block;
-  background: orange;
-  flex: 0 0 20%;
-  border-radius: 1px;
+.nav-buttons li a {
+  padding: 50px 24px;
 }

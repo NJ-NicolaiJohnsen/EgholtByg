@@ -1,19 +1,52 @@
+/*Typography, colors, buttons. The smallest sub-components the site is made of goes in here.*/
+
+:root {
+    --light-green: #ACD1B6;
+    --dark-green: #408E61;
+    --blue-grey: #40676E;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 
-  -webkit-transition: 500ms ;
-  -moz-transition: 500ms ;
-  -o-transition: 500ms ;
-  transition: ease-out 500ms ;
+  -webkit-transition: 237ms ;
+  -moz-transition: 237ms ;
+  -o-transition: 237ms ;
+  transition: ease-out 237ms ;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  font-weight: 400;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.light {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 700; 
+}
+
+ul {
+  list-style-type: none;
+}
 
 a {
   text-decoration: none;
@@ -21,5 +54,24 @@ a {
 }
 
 a:hover {
-  color: #3ab64c;
+  color: var(--dark-green);
+}
+
+
+.btn {
+    display: block;
+    width: max-content;
+    padding: 14px 30px !important;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.btn-green {
+    background: var(--light-green) !important;
+    color: var(--blue-grey);
+}
+
+.btn-blue {
+    background: var(--blue-grey) !important;
+    color: white;
 }
