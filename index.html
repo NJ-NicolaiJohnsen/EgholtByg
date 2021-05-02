@@ -13,17 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <nav>
         <div class="nav-wrap">
-            <div id="logo-wrapper">
+            <a id="logo-wrapper" href="index.html">
                 <img src='images/Logo.svg' alt='Egholt byg logo'>
-            </div>
+            </a>
             <ul class="nav-buttons">
                 <li>
                     <a href="#">Grønt byggeri</a>
@@ -32,7 +32,7 @@
                     <a href="#">Services</a>
                 </li>
                 <li>
-                    <a href="#">Kontakt</a>
+                    <a href="kontakt.html">Kontakt</a>
                 </li>
             </ul>
         </div>
@@ -43,16 +43,100 @@
             sizes="(max-width: 1220px) 1220px">
         <div class="header-content-wrapper">
             <div class="header-content">
-                <h1>Egholt Byg bygger bæredygtigt</h1>
+                <h1 class="banner-headline">Egholt Byg bygger bæredygtigt</h1>
                 <span>Få det du vil have lavet i trygheden om, at det er bæredygtigt og sundt for planeten.</span>
-                <a class="btn btn-blue" href="#" target="_self" rel="noopener noreferrer">Læs mere om bæredygtigt byggeri</a>
+                <a class="btn btn-green" href="#" target="_self" rel="noopener noreferrer">Læs mere om bæredygtigt byggeri</a>
             </div>
         </div>
     </header>
+    <main>
+        <section id="section1">
+           <div class="section-content">
+               <div class="section-content-left">
+                   <h2 class="headline1">egholt byg</h2>
+                   <p class="byline">Dan Knudsen</p>
+                   <p>Lorem lipsum dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum
+                       dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum dolar iusut.
+                       Lorem lipsum dolar iusut.</p>
+                    <a href="#" class="btn btn-green">Læs mere</a>
+                </div>
+                <div class="section-content-right section-right-img">
+                    <img src="images/dan-selfie.jpg" alt="Dan Knudsen"
+                        srcset="images/dan-selfie.jpg 852w"
+                        sizes="(max-width: 1220px) 852px, 852px">
+                </div>
+            </div>
+        </section>
 
+        <section id="section2">
+            <div class="section-content">
+                <h2 class="headline1">bæredygtigt byggeri</h2>
+                <div class="section-content-left">
+                    <p class="byline"></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas maximus tempor. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Vestibulum mollis magna sed tincidunt tempor. Maecenas tempor, enim sed molestie bibendum,
+                    nisl massa sollicitudin odio, a consequat ante leo vel dolor.
+                    <br/> Quisque quis ullamcorper augue. Donec sit amet consequat
+                    est, mollis molestie libero. Vestibulum maximus, diam sed hendrerit hendrerit, odio risus auctor nisi, quis faucibus
+                    tortor est et orci. Fusce accumsan sagittis eros vel porttitor.
+                    <br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas</p>
+                    <a href="#" class="btn btn-blue">Mere om bæredygtigt byggeri</a>
+                </div>
+                <div class="section-content-right">
+                    <ul class="bullet-points">
+                        <li>Alt i træ</li>
+                        <li>Godt med træfiber</li>
+                        <li>Lorem Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+        <section id="section3">
+            <div class="section-content">
+                <h2 class="headline1">Services</h2>
+                <div class="section-content-left">
+                    <ul class="bullet-points">
+                        <li>Ombygning og tilbygning</li>
+                        <li>Lægning af tag</li>
+                        <li>Lægning af gulv</li>
+                        <li>Vinduer og døre</li>
+                        <li>Totalenterprise</li>
+                    </ul>
+                </div>
+                <div class="section-content-right">
+                    <p class="byline"></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas maximus tempor. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                    <br>
+                    Vestibulum mollis magna sed tincidunt tempor. Maecenas tempor, enim sed molestie bibendum, nisl massa sollicitudin odio,
+                    a consequat ante leo vel dolor.
+                    <br>
+                    Quisque quis ullamcorper augue. Donec sit amet consequat est, mollis molestie libero. Vestibulum maximus, diam sed
+                    hendrerit hendrerit, odio risus auctor nisi, quis faucibus tortor est et orci. Fusce accumsan sagittis eros vel
+                    porttitor. </p>
+                    <a href='#' class="btn btn-green">Vores bæredygtige ydelser</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
+    <footer>
+        <div class="footer-content">
+            <a id="logo-wrapper" href="index.html">
+                <img src="images/logo2.svg" alt="Egholt Byg">
+            </a>
+            <address>
+                Kærvej 6, Egholt
+                <br>
+                6064 Jordrup
+            </address>
+            <div class="footer-splitter-line"></div>
+            <a class="contact-info" href="mailto:dan@egebyg.dk">dan@egebyg.dk</a>
+            <a class="contact-info" href="tel:+4551284499">+45 52 28 44 99</a>
+        </div>
+    </footer>
     <!-- <img srcset="images/Logo.svg 600w,
              images/dan-selfie.jpg 852w" sizes="(max-width: 600px) 600px,
             852px" src="images/dan-selfie.jpg" alt="Elva dressed as a fairy">

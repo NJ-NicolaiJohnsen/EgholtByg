@@ -1,0 +1,87 @@
+header {
+    position: relative;
+    height: 670px;
+    width: 100%;
+    overflow: -moz-hidden-unscrollable;
+    overflow: hidden;
+}
+
+header img {
+    transform: translateY(-100px);
+}
+
+.header-content-wrapper {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+}
+
+.header-content {
+    max-width: 1220px;
+    width: 100%;
+    margin: 250px auto;
+    color: white;
+}
+
+.header-content span {
+    width: 45%;
+    display: block;
+}
+
+.banner-headline, .header-content span {
+    text-shadow: 1px 1px 6px black;
+}
+
+.header-content * {
+    margin: 24px 0
+}
+
+.byline {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.byline::before {
+    display: inline-block;
+    content: '';
+    width: 48px;
+    height: 2px;
+    background: var(--blue-grey);
+    margin-right: 24px;
+}
+
+.section-right-img {
+    border-radius: 8px;
+    margin-top: -220px;
+    height: 475px;
+}
+
+.section-right-img img {
+    transform: translate(-280px, -260px) scale(0.75, 0.75);
+}
+
+#section2 {
+    background: var(--light-green);
+}
+
+#section3 .section-content-left {
+    grid-column-end: 5;
+}
+
+#section3 .section-content-right {
+    grid-column-start: 7;
+}
+
+#section3 h2 {
+    grid-column-start: 7;
+    grid-column-end: 13;
+}
+
+@media only screen and (max-width: 1220px) {
+    .section-right-img {
+        height: 24.75vw; /* Proportions for a portrait are 8 by 10 --> 8/10 = 0.8 | 8/0.8 = 10 ==> 380/1920 = 19.8% of screen width. 19.8/0.8 = 24.75% of screen width, which is gonna  be the height of the portrait.*/
+    }
+}

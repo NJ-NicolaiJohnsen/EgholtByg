@@ -1,0 +1,74 @@
+form {
+    padding-bottom: 160px;
+}
+
+.section-right-img {
+    border: 5px solid var(--blue-grey);
+    height: 475px;
+    border-radius: 8px;
+}
+
+.section-right-img img {
+    transform: translate(-280px, -260px) scale(0.75, 0.75);
+}
+
+#submit-form {
+    border: none;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    grid-column: 1 /span 2;
+}
+
+#submit-form:hover {
+    color: var(--dark-green);
+}
+
+label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+input[type='text'] {
+    display: block;
+    width: 100%;
+    padding: 14px 30px;
+    border-radius: 3px;
+    border: 2px solid var(--blue-grey);
+    background: #40676E11;
+    font: 16px 'Montserrat', sans-serif;
+    outline: none;
+}
+
+input[type='text']:focus {
+    background: white;
+}
+
+.form-name {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.form-email {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.form-telephone {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.form-where {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.form-more-info {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+

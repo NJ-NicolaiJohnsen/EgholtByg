@@ -39,13 +39,23 @@ body {
   font-weight: 300;
 }
 
-h1 {
+.banner-headline {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.headline1 {
+  grid-column: 1 /span 7;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 34px;
-  font-weight: 700; 
+  color: var(--blue-grey);
+  letter-spacing: 0.2em; /* letter spacing in Adobe XD is 1/1000th em, and i was using 200. Hence 200*0.001 = 0.2em */
 }
 
 ul {
   list-style-type: none;
+  line-height: 1em;
 }
 
 a {
@@ -57,21 +67,29 @@ a:hover {
   color: var(--dark-green);
 }
 
+p {
+  line-height: 19px;
+}
+
+br {
+  margin-bottom: 8px;
+}
 
 .btn {
+    font-size: 16px;
     display: block;
     width: max-content;
-    padding: 14px 30px !important;
+    padding: 14px 30px;
     border-radius: 3px;
     font-weight: 500;
 }
 
 .btn-green {
-    background: var(--light-green) !important;
+    background: var(--light-green);
     color: var(--blue-grey);
 }
 
 .btn-blue {
-    background: var(--blue-grey) !important;
+    background: var(--blue-grey);
     color: white;
 }
