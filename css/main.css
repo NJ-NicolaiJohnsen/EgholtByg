@@ -62,12 +62,20 @@ section {
 }
 
 .bullet-points {
-  background: white;
   padding: 40px;
   border-radius: 8px;
+}
+
+.bullet-points-blue {
   background: var(--blue-grey);
   color: white;
 }
+
+.bullet-points-green {
+  background: var(--light-green);
+  color: var(--blue-grey);
+}
+
 
 .bullet-points li {
   font-size: 18px;
