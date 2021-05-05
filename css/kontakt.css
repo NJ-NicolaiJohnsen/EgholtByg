@@ -3,7 +3,6 @@ form {
 }
 
 .section-right-img {
-    border: 5px solid var(--blue-grey);
     height: 475px;
     border-radius: 8px;
 }
@@ -72,3 +71,50 @@ input[type='text']:focus {
     grid-column-end: 7;
 }
 
+@media only screen and (max-width: 1024px) {
+    input[type='text'] {
+        margin-bottom: 40px;
+    }
+    
+    .section-right-img {
+        height: 67.6vw;
+        margin-bottom: 40px;
+    }
+
+    .section-right-img img {
+        transform: translate(-0px, -200px);
+    }
+
+    #section1 .section-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #section1 .headline1 {
+        order: 3;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .section-right-img img {
+        transform: translate(-0px, -140px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-right-img img {
+        transform: translate(-30px, -240px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section-right-img img {
+        transform: translate(-30px, -180px);
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .section-right-img img {
+        transform: translate(-40px, -140px);
+    }
+}

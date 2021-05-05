@@ -21,22 +21,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.semibold {
-  font-weight: 600;
-}
-
-.medium {
-  font-weight: 500;
-}
-
-.light {
-  font-weight: 300;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .banner-headline {
@@ -92,4 +78,24 @@ br {
 .btn-blue {
     background: var(--blue-grey);
     color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .headline1 {
+    font-size: 28px;
+  }
+
+  .banner-headline {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .headline1 {
+    font-size: 24px;
+  }
+  
+  .banner-headline {
+    font-size: 34px;
+  }
 }

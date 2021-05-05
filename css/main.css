@@ -1,4 +1,17 @@
 /* Styling for large elements that will be reused in many sub sites. Like Navbar and Footer */
+.super-nav {
+  top: 0;
+  width: 100%;
+  position: relative;
+  z-index: 1000000;
+}
+
+main, header {
+  -webkit-transition: 0ms ;
+  -moz-transition: 0ms ;
+  -o-transition: 0ms ;
+  transition: 0ms ;
+}
 
 nav {
   height: 100px;
@@ -27,7 +40,36 @@ nav {
   padding: 50px 24px;
 }
 
-section {
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.slide-in-nav {
+
+  position: fixed;
+  background-color: var(--dark-green);
+  width: 61.8vw;
+  right: 0;
+
+  height: 100vh;
+  transform: translateX(100%);
+}
+
+.slide-in-nav .nav-buttons {
+  display: block;
+  font-weight: 500;
+  padding: 16px 32px;
+}
+.slide-in-nav .nav-buttons li a {
+  display: block;
+  color: var(--light-green);
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px 0;
+}
+
+section, article {
   width: 100%;
   padding: 160px 0;
 }
@@ -42,21 +84,20 @@ section {
 }
 
 .section-content-left {
+  width: 100%;
   grid-column-start: 1;
   grid-column-end: 7;
 }
 
 .section-content-right {
+  width: 100%;
   grid-column-start: 9;
   grid-column-end: 13;
   overflow: hidden;
   overflow: -moz-hidden-unscrollable;
 }
 
-.section-content-left > *:not(:last-child) {
-  margin-bottom: 24px;
-}
-
+.section-content-left > *:not(:last-child),
 .section-content-right > *:not(:last-child) {
   margin-bottom: 24px;
 }
@@ -64,6 +105,8 @@ section {
 .bullet-points {
   padding: 40px;
   border-radius: 8px;
+  max-width: 380px;
+  position: relative;
 }
 
 .bullet-points-blue {
@@ -78,7 +121,7 @@ section {
 
 
 .bullet-points li {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -134,4 +177,164 @@ footer {
 
 .footer-content address {
   text-align: right;
+}
+
+
+@media only screen and (max-width: 1366px) {
+
+  .section-content {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+  }
+
+  
+  .nav-wrap, .footer-content {
+    max-width: 1024px;
+  }
+
+  .section-content-right {
+    grid-column-start: 8;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  
+  .nav-wrap {
+    padding: 0 80px;
+  }
+
+  .footer-content {
+    padding: 40px 80px;
+  }
+
+  section, article {
+    width: 100%;
+    padding: 120px 0;
+  }
+
+  .section-content {
+    width: 100%;
+    margin: auto;
+    padding: 0 80px;
+    display: block;
+    row-gap: 0px;
+    column-gap: 0px;
+  }
+
+  .section-content .headline1 {
+    margin-bottom: 24px;
+  }
+
+  .section-content-left > *:not(:last-child),
+  .section-content-right > *:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .section-content .headline1 {
+    margin-bottom: 16px;
+  }
+  .bullet-points-blue {
+    background: transparent;
+    color: var(--blue-grey);
+  }
+
+
+  .bullet-points-green {
+    background: transparent;
+    color: var(--blue-grey);
+  }
+
+  .bullet-points::before,
+  .bullet-points::after {
+    display: block;
+    content: '';
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .bullet-points::before {
+    top: 0;
+    left: 0;
+  }
+
+  .bullet-points::after {
+    right: 0px;
+    bottom: 0px;
+    transform: rotate(180deg);
+  }
+
+  .bullet-points-green::before {
+    background:url(../images/bullet-corner-green.png);
+    width: 236px;
+    height: 146px;
+  }
+
+  .bullet-points-green::after {
+    background: url(../images/bullet-corner-green.png);
+    width: 236px;
+    height: 146px;
+  }
+  .bullet-points-blue::before {
+    background: url(../images/bullet-corner-blue.png);
+    width: 236px;
+    height: 146px;
+  }
+
+  .bullet-points-blue::after {
+    background: url(../images/bullet-corner-blue.png);
+    width: 236px;
+    height: 146px;
+  }
+
+
+}
+
+@media only screen and (max-width: 766px) {
+  .nav-wrap > .nav-buttons {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .nav-wrap {
+    padding: 0 16px;
+  }
+
+  .footer-content {
+    padding: 40px 16px;
+  }
+
+  .footer-content #logo-wrapper-footer {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .footer-content address {
+    display: inline-block;
+    float: none;
+    text-align: left;
+  }
+
+  section, article {
+    width: 100%;
+    padding: 80px 0;
+  }
+
+  .section-content {
+    width: 100%;
+    max-width: 1220px;
+    margin: auto;
+    padding: 0 16px;
+    display: block;
+  }
+
+  .bullet-points {
+    max-width: 380px;
+  }
 }

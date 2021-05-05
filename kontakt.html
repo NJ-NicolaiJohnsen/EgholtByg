@@ -18,30 +18,47 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav>
-            <div class="nav-wrap">
-                <a id="logo-wrapper" href="index.html">
-                    <img src='images/Logo.svg' alt='Egholt byg logo'>
-                </a>
+        <div class="super-nav">
+            <nav>
+                <div class="nav-wrap">
+                    <a id="logo-wrapper" href="index.html">
+                        <img src='images/Logo.svg' alt='Egholt byg logo'>
+                    </a>
+                    <ul class="nav-buttons">
+                        <li>
+                            <a href="#">Grønt byggeri</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                    <img src="images/burger-menu-icon.svg" alt="Navigation menu" class="burger-menu">
+                </div>
+            </nav>
+        
+            <div role="navigation" class="slide-in-nav">
                 <ul class="nav-buttons">
                     <li>
                         <a href="#">Grønt byggeri</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="services.html">Services</a>
                     </li>
                     <li>
                         <a href="kontakt.html">Kontakt</a>
                     </li>
                 </ul>
             </div>
-        </nav>
+        </div>
 
         <main>
-            <section id="section1">
+            <article id="section1">
                 <div class="section-content">
-                    <article class="section-content-left">
-                        <h1 class="headline1">kontakt</h1>
+                    <h1 class="headline1">kontakt</h1>
+                    <div class="section-content-left">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas maximus tempor. Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit.
@@ -62,14 +79,14 @@
                             hendrerit hendrerit, odio risus auctor nisi, quis faucibus tortor est et orci. Fusce accumsan sagittis eros vel
                             porttitor.
                         </p>
-                    </article>
+                    </div>
                     <div class="section-content-right section-right-img">
                         <img src="images/dan-selfie.jpg" alt="Dan Knudsen"
                             srcset="images/dan-selfie.jpg 852w"
-                            sizes="(max-width: 800px) 400px, 852px">
+                            sizes="(max-width: 450px) 450px,(max-width: 600px) 600px,(max-width: 900px) 760px, (max-width: 1024px) 864px, 852px">
                     </div>
                 </div>
-            </section>
+            </article>
         </main>
 
         <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="POST">
@@ -104,7 +121,7 @@
 
         <footer>
             <div class="footer-content">
-                <a id="logo-wrapper" href="index.html">
+                <a id="logo-wrapper-footer" href="index.html">
                     <img src="images/logo2.svg" alt="Egholt Byg">
                 </a>
                 <address>

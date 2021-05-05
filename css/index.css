@@ -1,13 +1,10 @@
 header {
+
     position: relative;
-    height: 670px;
+    max-height: 670px;
     width: 100%;
     overflow: -moz-hidden-unscrollable;
     overflow: hidden;
-}
-
-header img {
-    transform: translateY(-100px);
 }
 
 .header-content-wrapper {
@@ -24,12 +21,13 @@ header img {
     color: white;
 }
 
-.header-content span {
-    width: 45%;
-    display: block;
+.header-content p {
+    width: 100%;
+    max-width: 500px;
+    min-width: 340px;
 }
 
-.banner-headline, .header-content span {
+.banner-headline, .header-content p {
     text-shadow: 1px 1px 6px black;
 }
 
@@ -53,9 +51,9 @@ header img {
     margin-right: 24px;
 }
 
-.section-right-img {
+#section1 .section-right-img {
     border-radius: 8px;
-    margin-top: -220px;
+    margin-top: -300px;
     height: 475px;
 }
 
@@ -80,8 +78,66 @@ header img {
     grid-column-end: 13;
 }
 
-@media only screen and (max-width: 1220px) {
-    .section-right-img {
-        height: 24.75vw; /* Proportions for a portrait are 8 by 10 --> 8/10 = 0.8 | 8/0.8 = 10 ==> 380/1920 = 19.8% of screen width. 19.8/0.8 = 24.75% of screen width, which is gonna  be the height of the portrait.*/
+@media only screen and (max-width: 1366px) {
+    .header-content {
+        max-width: 1024px;
+        margin: 20% auto;
+    }
+    #section3 .section-content-left {
+        grid-column-end: 6;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header-content {
+        padding: 0 80px;
+    }
+
+    .section-right-img img {
+        transform: translate(-40px, -80px) scale(1, 1);
+    }
+
+    #section1 .section-right-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 67.6vw; /* Proportions for a portrait are 8 by 10 --> 8/10 = 0.8 | 8/0.8 = 10 ==> 380/1920 = 19.8% of screen width. 19.8/0.8 = 24.75% of screen width, which is gonna  be the height of the portrait.*/
+        margin: 0;
+        width: 100%;
+        margin-bottom: 32px
+    }
+
+    #section1 h2, #section3 h2 {
+        order: 3;
+        flex: 1 0 100%;
+    }
+
+    #section1 .section-content,
+    #section3 .section-content {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    #section2 .section-content-left,
+    #section3 .section-content-right {
+        margin-bottom: 40px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 766px) {
+    .header-content {
+        padding: 0 16px;
+    }  
+    .section-right-img img {
+        transform: translate(-30px, -60px) scale(0.9, 0.9);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section-right-img img {
+        transform: translate(-30px, -60px) scale(0.7, 0.7);
     }
 }

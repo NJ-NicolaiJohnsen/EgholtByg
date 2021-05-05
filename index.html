@@ -19,11 +19,28 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrap">
-            <a id="logo-wrapper" href="index.html">
-                <img src='images/Logo.svg' alt='Egholt byg logo'>
-            </a>
+    <div class="super-nav">
+        <nav>
+            <div class="nav-wrap">
+                <a id="logo-wrapper" href="index.html">
+                    <img src='images/Logo.svg' alt='Egholt byg logo'>
+                </a>
+                <ul class="nav-buttons">
+                    <li>
+                        <a href="#">Grønt byggeri</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <img src="images/burger-menu-icon.svg" alt="Navigation menu" class="burger-menu">
+            </div>
+        </nav>
+
+        <div role="navigation" class="slide-in-nav">
             <ul class="nav-buttons">
                 <li>
                     <a href="#">Grønt byggeri</a>
@@ -36,7 +53,7 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </div>
 
     <header>
         <img src='images/forest.jpeg' alt="Skov og solskin" srcset="images/forest.jpeg 1600w"
@@ -44,7 +61,7 @@
         <div class="header-content-wrapper">
             <div class="header-content">
                 <h1 class="banner-headline">Egholt Byg bygger bæredygtigt</h1>
-                <span>Få det du vil have lavet i trygheden om, at det er bæredygtigt og sundt for planeten.</span>
+                <p>Få det du vil have lavet i trygheden om, at det er bæredygtigt og sundt for planeten.</p>
                 <a class="btn btn-green" href="#" target="_self" rel="noopener noreferrer">Læs mere om bæredygtigt byggeri</a>
             </div>
         </div>
@@ -52,8 +69,8 @@
     <main>
         <section id="section1">
            <div class="section-content">
+               <h2 class="headline1">egholt byg</h2>
                <div class="section-content-left">
-                   <h2 class="headline1">egholt byg</h2>
                    <p class="byline">Dan Knudsen</p>
                    <p>Lorem lipsum dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum
                        dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum dolar iusut. Lorem lipsum dolar iusut.
@@ -124,7 +141,7 @@
 
     <footer>
         <div class="footer-content">
-            <a id="logo-wrapper" href="index.html">
+            <a id="logo-wrapper-footer" href="index.html">
                 <img src="images/logo2.svg" alt="Egholt Byg">
             </a>
             <address>
