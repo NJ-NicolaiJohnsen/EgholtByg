@@ -33,11 +33,15 @@ nav {
   align-items: center;
   height: 100%;
   overflow: hidden;
-}
+}      
 
 .nav-buttons li a {
   color: var(--blue-grey);
   padding: 50px 24px;
+}
+
+.nav-buttons li a:hover {
+  background: #9CD1a6;
 }
 
 .burger-menu {
@@ -67,6 +71,10 @@ nav {
   width: 100%;
   margin: 8px 0;
   padding: 8px 0;
+}
+
+.slide-in-nav .nav-buttons li a:hover {
+  color: var(--blue-grey);
 }
 
 section, article {
