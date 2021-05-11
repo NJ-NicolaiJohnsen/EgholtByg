@@ -2,8 +2,9 @@ const burgerMenu = 'images/burger-menu-icon.svg'
 const exitMenu = 'images/menu-exit.svg'
 let navCounter = 1;
 
-
-
+/**
+ * Slide in navigation bar on mobile
+ */
 document.querySelector('.burger-menu').addEventListener('click', function(e) {
     const secondElement = document.body.children[1];
     let nav = document.querySelector('.super-nav');
@@ -22,3 +23,4 @@ document.querySelector('.burger-menu').addEventListener('click', function(e) {
     }
     navCounter++
 })
+

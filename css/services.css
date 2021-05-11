@@ -62,4 +62,8 @@
     .service-card p {
         margin: 16px 0;
     }
+
+    #section2 .section-content {
+        column-gap: 16px;        
+    }
 }
